@@ -1,0 +1,16 @@
+[package]
+name = "whatsapp-lite"
+version = "0.1.0"
+description = "Cliente ligero no oficial de WhatsApp Web para Windows"
+authors = ["WhatsApp Lite contributors"]
+edition = "2021"
+
+[lib]
+name = "whatsapp_lite"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }

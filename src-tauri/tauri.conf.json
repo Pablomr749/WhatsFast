@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "WhatsApp Lite",
+  "version": "0.1.0",
+  "identifier": "com.whatsapplite.desktop",
+  "build": {
+    "frontendDist": "../frontend"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "WhatsApp Lite",
+        "url": "https://web.whatsapp.com",
+        "width": 1180,
+        "height": 780,
+        "minWidth": 900,
+        "minHeight": 600,
+        "center": true,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "category": "Communication",
+    "shortDescription": "Cliente ligero para WhatsApp Web",
+    "longDescription": "Aplicación de escritorio no oficial que muestra WhatsApp Web mediante Microsoft Edge WebView2.",
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper"
+      }
+    }
+  }
+}
