@@ -1,4 +1,4 @@
-# WhatsApp Lite — Windows 11 x64
+# WhatsFast — Windows 11 x64
 
 Cliente de escritorio **no oficial** que abre `https://web.whatsapp.com` en una ventana Tauri 2 sobre Microsoft Edge WebView2. El núcleo de la aplicación está escrito en Rust.
 
